@@ -1,0 +1,99 @@
+{% extends "WebJF/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+ <!-- ======= Contact Section ======= -->
+
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container">
+  
+          <div class="row" data-aos="zoom-out">
+            <div class="col-lg-9 text-center text-lg-start">
+              <h3>Contáctanos si...</h3>
+              <p> Si deseas empezar a vender nuestras marcas, como Vizzano, Modare Ultraconforto, Actvitta y BR Sport, te invitamos a ponerte en contacto con nosotros. Por favor, ten en cuenta que requerimos que ya cuentes con una tienda física o una plataforma en línea establecida. ¡Estamos emocionados poder trabajar juntos!</p>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle" href="{% url 'Contacto' %}">Contacto</a>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End Cta Section -->
+
+
+      <div class="container mt-4">
+        <div class="section-title" data-aos="zoom-out">
+          <h2>JF SHOES</h2>
+          <p>Contacto</p>
+        </div>
+      </div>
+      
+
+ <div class="d-flex justify-content-center">
+  <form action="" method="POST" class="formulario">
+    {% csrf_token %}
+      <div class="form-group">
+          {{ form }}
+        </table>
+      </div>
+      <style>
+        .btn-neon-orange {
+          background-color: #ff6600;
+          border-color: #ff6600;
+          color: #fff;
+        }
+        .btn-neon-orange:hover {
+          background-color: #ff5500;
+          border-color: #ff5500;
+        }
+      </style>
+      
+      <div class="text-center mb-4 mt-4">
+        <input type="submit" value="Enviar" class="btn btn-neon-orange btn-lg">
+      </div>
+      
+      
+  </form>
+</div>
+
+<div class="container mt-4">
+  <div class="section-title" data-aos="zoom-out">
+    <h2>JF SHOES</h2>
+    <p>UBICACIÓN</p>
+  </div>
+</div>
+
+
+<div id="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div style="width: 100%; height: 450px;">
+        <iframe style="width: 100%; height: 90%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.256454483702!2d-79.93824!3d-3.2865048999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90330e72e4d5c7e3%3A0xe55e28db70ddc1f8!2sImportadora%20JF%20Shoes!5e0!3m2!1ses-419!2sec!4v1686945338016!5m2!1ses-419!2sec" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  {% if "valido" in request.GET %}
+  <div id="success-alert" class="alert alert-success" role="alert" style="width: 400px; justify-content: center;">
+    Tu información ha sido enviada con éxito.
+  </div>
+
+
+  <script>
+      // Esperar 5 segundos y ocultar el elemento
+      setTimeout(function() {
+          document.getElementById("success-alert").style.display = "none";
+      }, 8000);
+  </script>
+
+
+  {% endif %}
+
+{% endblock %}

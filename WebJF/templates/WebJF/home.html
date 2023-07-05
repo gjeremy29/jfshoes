@@ -1,0 +1,308 @@
+{% extends "WebJF/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+    <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Bienvenidos a <span>JF Shoes</span></h2>
+          <p class="animate__animated fanimate__adeInUp">Somos una empresa líder en la importación y distribución de reconocidas marcas brasileñas como Vizzano, Modare Ultraconforto, Actvitta y BR Sport. Nos especializamos en calzado, ofreciendo productos de calidad y estilo para satisfacer las necesidades del mercado.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Leer más.</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Misión</h2>
+          <p class="animate__animated animate__fadeInUp">Ofrecer un producto cómodo, novedoso y de alta calidad, satisfaciendo las exigencias del mercado y garantizando así, seguridad en la inversión de las personas.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Leer más.</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Visión</h2>
+          <p class="animate__animated animate__fadeInUp">Convertirse en una empresa líder en el mercado nacional y ser reconocida por nuestra calidad humana y de nuestros productos.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Leer más.</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>JF Shoes</h2>
+          <p>Somos</p>
+        </div>
+
+        <div class="row content" data-aos="fade-up">
+          <div class="col-lg-6">
+            <p>
+              Somos una empresa líder en la importación y distribución de reconocidas marcas brasileñas. Nos especializamos en calzado, ofreciendo productos de calidad y estilo para satisfacer las necesidades del mercado.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Vizzano </li>
+              <li><i class="ri-check-double-line"></i> Modare Ultraconforto </li>
+              <li><i class="ri-check-double-line"></i> Actvitta </li>
+              <li><i class="ri-check-double-line"></i> BR Sport </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Trabajamos incansablemente para elevar el estilo y la comodidad de las personas. 
+              Estamos comprometidos en ofrecer una experiencia única a nuestros clientes, donde la moda se encuentra con la funcionalidad para que cada paso sea una declaración de estilo y confort.
+            </p>
+            <a href="#" class="btn-learn-more">Leer más.</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-out">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Contáctanos si...</h3>
+            <p> Si deseas empezar a vender nuestras marcas como: Vizzano, Modare Ultraconforto, Actvitta y BR Sport, te invitamos a ponerte en contacto con nosotros. Por favor, ten en cuenta que requerimos que ya cuentes con una tienda física o una plataforma en línea establecida. ¡Estamos emocionados poder trabajar juntos!</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="{% url 'Contacto' %}">Contacto</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio">
+          <div class="container">
+    
+            <div class="section-title" data-aos="zoom-out">
+              <h2>JF Shoes</h2>
+              <p>marcas</p>
+            </div>
+    
+            <ul id="portfolio-flters" class="d-flex justify-content-end" data-aos="fade-up">
+              <li data-filter="*" class="filter-active">Todo</li>
+              <li data-filter=".filter-vizzano">Vizzano</li>
+              <li data-filter=".filter-modare">Modare</li>
+              <li data-filter=".filter-actvitta">Actvitta</li>
+              <li data-filter=".filter-brsport">Br Sport</li>
+            </ul>
+    
+            <div class="row portfolio-container" data-aos="fade-up">
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-vizzano">
+                <div class="portfolio-img"><img src="https://bafybeie26cs25hfdkaxs5x6lbnoby345xb26j3v4ioittbqi5pb2y7uwwu.ipfs.w3s.link/vizz1.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                  <h4>Vizzano</h4>
+                  <p>Marca</p>
+                  <a href="https://bafybeie26cs25hfdkaxs5x6lbnoby345xb26j3v4ioittbqi5pb2y7uwwu.ipfs.w3s.link/vizz1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+                  </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-actvitta">
+                <div class="portfolio-img"><img src="https://bafybeigyol6uoksibimexfzwrgl7kqgo7wl47mzmdkjebxrylmi4n4cury.ipfs.w3s.link/act1.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                  <h4>Actvitta</h4>
+                  <p>Marca</p>
+                  <a href="https://bafybeigyol6uoksibimexfzwrgl7kqgo7wl47mzmdkjebxrylmi4n4cury.ipfs.w3s.link/act1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-brsport">
+                <div class="portfolio-img"><img src="https://bafybeicdo7s6o7pxypnfituvnvlfn7v7r4luspfaxblhyqitn6sgmyu7we.ipfs.w3s.link/br1.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                  <h4>Br Sport</h4>
+                  <p>Marca</p>
+                  <a href="https://bafybeicdo7s6o7pxypnfituvnvlfn7v7r4luspfaxblhyqitn6sgmyu7we.ipfs.w3s.link/br1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-vizzano">
+                <div class="portfolio-img"><img src="https://bafybeia367nvukzragtjaoe6cktejytbhwjz5rnfvsphphf7khojlgfucu.ipfs.w3s.link/vizz2.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                  <h4>Vizzano</h4>
+                  <p>Marca</p>
+                  <a href="https://bafybeia367nvukzragtjaoe6cktejytbhwjz5rnfvsphphf7khojlgfucu.ipfs.w3s.link/vizz2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-modare">
+                <div class="portfolio-img"><img src="https://bafybeicjyusg5bb3rmlgwmtfmdobvhtctqauvjmtwksyjfyryffi4ihns4.ipfs.w3s.link/mod1.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                  <h4>Modare Ultraconforto</h4>
+                  <p>Marca</p>
+                  <a href="https://bafybeicjyusg5bb3rmlgwmtfmdobvhtctqauvjmtwksyjfyryffi4ihns4.ipfs.w3s.link/mod1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-actvitta">
+                <div class="portfolio-img"><img src="https://bafybeifrko34wu2xzlkbw7tocluujwzou5bt7g4a6eq7p4wivbdt7qsdw4.ipfs.w3s.link/act2.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                  <h4>Actvitta</h4>
+                  <p>Marca</p>
+                  <a href="https://bafybeifrko34wu2xzlkbw7tocluujwzou5bt7g4a6eq7p4wivbdt7qsdw4.ipfs.w3s.link/act2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-brsport">
+                <div class="portfolio-img"><img src="https://bafybeidoqajb7ydyqxxmmducebz47nhsc6c7qu57ygraqhjrx3oo73wagy.ipfs.w3s.link/br2.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                  <h4>Br Sport</h4>
+                  <p>Marca</p>
+                  <a href="https://bafybeidoqajb7ydyqxxmmducebz47nhsc6c7qu57ygraqhjrx3oo73wagy.ipfs.w3s.link/br2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-vizzano">
+                <div class="portfolio-img"><img src="https://bafybeielaebebostywuzqbkwzbh3phwr5a73dje2vqe3n7u3j6bkg2zzzq.ipfs.w3s.link/vizz3.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                  <h4>Vizzano</h4>
+                  <p>Marca</p>
+                  <a href="https://bafybeielaebebostywuzqbkwzbh3phwr5a73dje2vqe3n7u3j6bkg2zzzq.ipfs.w3s.link/vizz3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-modare">
+                <div class="portfolio-img"><img src="https://bafybeib3weacqnarnr3gyc245mqikjirlgvhhg744hpco2zn7r5mjavv4q.ipfs.w3s.link/mod2.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                  <h4>Modare Ultraconforto</h4>
+                  <p>Marca</p>
+                  <a href="https://bafybeib3weacqnarnr3gyc245mqikjirlgvhhg744hpco2zn7r5mjavv4q.ipfs.w3s.link/mod2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-modare">
+                <div class="portfolio-img"><img src="https://bafybeid4ljfsmejoqnmwittqdrsb2445wkzy7tdmlgcsd36jx332jemdcu.ipfs.w3s.link/mod3.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                  <h4>Modare Ultraconforto</h4>
+                  <p>Marca</p>
+                  <a href="https://bafybeid4ljfsmejoqnmwittqdrsb2445wkzy7tdmlgcsd36jx332jemdcu.ipfs.w3s.link/mod3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-brsport">
+                <div class="portfolio-img"><img src="https://bafybeieuk6g5lk6673h4aibyfdjrjivvwdly57twbfycrby4qhf5foj3tq.ipfs.w3s.link/br3.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                  <h4>Br Sport</h4>
+                  <p>Marca</p>
+                  <a href="https://bafybeieuk6g5lk6673h4aibyfdjrjivvwdly57twbfycrby4qhf5foj3tq.ipfs.w3s.link/br3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item filter-actvitta">
+                <div class="portfolio-img"><img src="https://bafybeiao2vl5taeiacn64l65sc3iluikm6mz2xrms2o54h6yhkajbn4yly.ipfs.w3s.link/act3.jpg" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                  <h4>Actvitta</h4>
+                  <p>Marca</p>
+                  <a href="https://bafybeiao2vl5taeiacn64l65sc3iluikm6mz2xrms2o54h6yhkajbn4yly.ipfs.w3s.link/act3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+        </section><!-- End Portfolio Section -->
+
+     <!-- ======= F.A.Q Section ======= -->
+     <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>F.A.Q</h2>
+          <p>Preguntas Frecuentes</p>
+        </div>
+
+        <ul class="faq-list">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">¿Venden solo al por mayor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Sí, por el momento realizamos ventas únicamente al por mayor a nivel nacional.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">¿Cuáles son los requisitos para vender al por mayor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                El requisito principal es contar con una tienda física establecida o una plataforma en línea consolidada, además de poseer un RUC.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">¿Dónde están ubicados? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Nuestra ubicación es en Importadora JF Shoes, Av. Luis León Román, Machala.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">¿Cuál es el origen de sus productos? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Nuestros productos, como las reconocidas marcas Vizzano, Modare Ultraconforto, Actvitta y BR Sport, provienen de Brasil, ofreciendo la mejor calidad y estilo para nuestros clientes.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+
+
+
+    {% endblock %}
