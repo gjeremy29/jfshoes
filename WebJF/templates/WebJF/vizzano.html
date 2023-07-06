@@ -169,10 +169,15 @@
     </div>
     </section><!-- End Portfolio Section -->
 
-    <script>
-      window.addEventListener('beforeunload', function() {
+    <<script>
+      document.addEventListener('DOMContentLoaded', function() {
         var video = document.getElementById('video1');
-        video.pause();
+        var videoOverlay = document.getElementById('video-overlay');
+    
+        videoOverlay.addEventListener('click', function() {
+          video.play();
+          videoOverlay.style.display = 'none';
+        });
       });
     </script>
 
