@@ -8,9 +8,9 @@
 
 
 <div style="position: relative; width: 100%; height: 100vh;">
-  <video id="video1" class="w-100 h-100" autoplay muted loop style="object-fit: cover;">
+  <video id="video1" class="w-100 h-100" autoplay muted loop playsinline style="object-fit: cover;">
     <source src="https://bafybeigdfvfwjjqumtelt3uu5g5lekr6nxncayjlcfovgpluojqual7fpy.ipfs.w3s.link/vizzWeb.mp4" type="video/mp4">
-  </video>    
+  </video>      
   <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">  
     <h1 class="animate__animated animate__fadeInDown fw-normal display-1"><span>VIZZANO</span></h1>
     <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
@@ -169,15 +169,10 @@
     </div>
     </section><!-- End Portfolio Section -->
 
-    <<script>
-      document.addEventListener('DOMContentLoaded', function() {
+    <script>
+      window.addEventListener('beforeunload', function() {
         var video = document.getElementById('video1');
-        var videoOverlay = document.getElementById('video-overlay');
-    
-        videoOverlay.addEventListener('click', function() {
-          video.play();
-          videoOverlay.style.display = 'none';
-        });
+        video.pause();
       });
     </script>
 
