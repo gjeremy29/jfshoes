@@ -6,3 +6,4 @@ filelock==3.12.0
 platformdirs==3.5.1
 sqlparse==0.4.4
 virtualenv==20.23.0
+decouple==3.4 
