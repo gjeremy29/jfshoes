@@ -12,6 +12,10 @@
       "config": {
         "distDir": "staticfiles_build"
       }
+    },
+    {
+      "src": "requirements.txt",
+      "use": "@vercel/python"
     }
   ],
   "routes": [
