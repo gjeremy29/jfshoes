@@ -19,9 +19,9 @@ def Contact(request):
             aceptar_condiciones= request.POST.get("aceptar_condiciones")
 
 
-            email=EmailMessage("Mensaje desde App Django",
+            email=EmailMessage("Mensaje desde Web JF Shoes",
             "Usuario interesado en comprar productos para la venta, comunicándose mediante la web, con los siguientes datos:\n Nombre: {}\n Dirección gmail: {}\n celular: {}\n Ruc: {}\n Dirección: {}\n Mensaje: {}\n".format(nombres,correo,celular,ruc,direccion,mensaje),
-            "",["gjeremy0229@gmail.com"])
+            "",["ventas@importadorajfshoes.com"])
 
             try:
                 email.send()
