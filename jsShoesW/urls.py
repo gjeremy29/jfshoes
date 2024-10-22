@@ -24,7 +24,6 @@ urlpatterns = [
 
     path('contacto/', include('contacto.urls')),
 
-    path('encuentranos/', include('encuentranos.urls')),
     
     path('', include('WebJF.urls')),
 ]
