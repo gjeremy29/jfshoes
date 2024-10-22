@@ -23,6 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('contacto/', include('contacto.urls')),
+
+    path('encuentranos/', include('encuentranos.urls')),
     
     path('', include('WebJF.urls')),
 ]

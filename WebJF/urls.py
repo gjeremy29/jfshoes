@@ -10,7 +10,6 @@ urlpatterns = [
     path('modare',views.modare, name="Modare"),
     path('actvitta',views.actvitta, name="Actvitta"),
     path('brsport',views.brsport, name="Brsport"),
-    path('encuentranos',views.encuentranos, name="Encuentranos"),
 ]
 
 urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
