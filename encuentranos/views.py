@@ -9,4 +9,4 @@ def home(request):
     
 
     context = {'map':initialMap._repr_html_()}
-    return render(request, 'encuentranos.html')
+    return render(request, 'encuentranos/encuentranos.html')
