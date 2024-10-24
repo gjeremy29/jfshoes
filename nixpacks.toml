@@ -1,0 +1,9 @@
+[build]
+# Define the language used in your project
+languages = ["python"]
+
+# Optional: Define the build command
+buildCmd = "pip install -r requirements.txt"
+
+# Optional: Define the start command for Django
+startCmd = "python manage.py runserver"
