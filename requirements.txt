@@ -19,4 +19,3 @@ sqlparse==0.4.4
 typing_extensions==4.12.2
 urllib3==2.2.3
 virtualenv==20.23.0
-xyzservices==2024.9.0
