@@ -32,7 +32,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://jfshoes.net/', 'https://jfshoes1.vercel.app/', ]
+ALLOWED_HOSTS = ['https://jfshoes.net/', 'https://jfshoes1.vercel.app/',]
 
 
 # Application definition
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'jsShoesW.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(defaul=os.getenv('DATABASE_URL'))
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
 }
 
 
