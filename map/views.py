@@ -25,4 +25,7 @@ def map(request):
     context = {'map':initialMap._repr_html_(), 'locations':locations}
 
     return render(request, 'map/map.html', context)
+<<<<<<< HEAD
 
+=======
+>>>>>>> newbranch

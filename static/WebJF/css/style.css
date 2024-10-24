@@ -1596,4 +1596,7 @@ section {
   padding: 100px 100px;
 }
 
-
+.batchgeo{
+  display: grid;
+  place-items: center;
+}
