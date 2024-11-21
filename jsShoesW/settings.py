@@ -35,6 +35,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['web-production-c80e.up.railway.app','jfshoes.net','www.jfshoes.net']
 
 
+CSRF_TRUSTED_ORIGINS = ['http://*','https://web-production-c80e.up.railway.app']
+
 # Application definition
 
 INSTALLED_APPS = [
