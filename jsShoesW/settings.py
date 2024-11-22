@@ -90,14 +90,7 @@ WSGI_APPLICATION = 'jsShoesW.wsgi.application'
 
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'kfWPHFEFfuzbVYzZVZMIeTLVKmBCXekc',
-        'HOST': 'postgres.railway.internal',
-        'PORT': '5432',
-    }
+    'default': dj_database_url.config(default='postgresql://postgres:kfWPHFEFfuzbVYzZVZMIeTLVKmBCXekc@postgres.railway.internal:5432/railway')
 }
 
 
