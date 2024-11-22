@@ -32,10 +32,10 @@ SECRET_KEY = 'django-insecure-q-k&*4po0p0=@6g1o^4=p5*k+8(^)=si6wz&__d60u#(_elfr6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['web-production-c80e.up.railway.app','jfshoes.net','www.jfshoes.net']
+ALLOWED_HOSTS = ['web-production-c80e.up.railway.app','jfshoes.net','www.jfshoes.net','localhost']
 
 
-CSRF_TRUSTED_ORIGINS = ['http://*','https://web-production-c80e.up.railway.app','https://www.jfshoes.net']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-c80e.up.railway.app','https://www.jfshoes.net']
 
 # Application definition
 
