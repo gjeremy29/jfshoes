@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-q-k&*4po0p0=@6g1o^4=p5*k+8(^)=si6wz&__d60u#(_elfr6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['web-production-c80e.up.railway.app', 'jfshoes.net', 'www.jfshoes.net']
+ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://web-production-c80e.up.railway.app',
@@ -94,8 +94,6 @@ WSGI_APPLICATION = 'jsShoesW.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         default=os.getenv('DATABASE_URL'),
-        conn_max_age=600,
-        ssl_require=True
     )
 }
 
