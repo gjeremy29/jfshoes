@@ -35,7 +35,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['web-production-c80e.up.railway.app','jfshoes.net','www.jfshoes.net']
 
 
-CSRF_TRUSTED_ORIGINS = ['http://*','https://web-production-c80e.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['http://*','https://web-production-c80e.up.railway.app','https://www.jfshoes.net']
 
 # Application definition
 
@@ -86,6 +86,8 @@ WSGI_APPLICATION = 'jsShoesW.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+
+
 
 DATABASES = {
     'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
