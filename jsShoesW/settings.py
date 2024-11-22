@@ -38,7 +38,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://web-production-c80e.up.railway.app','https://jfshoes.net','https://www.jfshoes.net'
+    'web-production-c80e.up.railway.app','jfshoes.net','www.jfshoes.net'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
