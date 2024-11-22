@@ -19,7 +19,7 @@ import os
 load_dotenv()
 
 # Get SECRET_KEY from environment variables
-SECRET_KEY = 'django-insecure-q-k&*4po0p0=@6g1o^4=p5*k+8(^)=si6wz&__d60u#(_elfr6'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 
 
