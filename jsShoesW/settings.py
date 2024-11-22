@@ -19,7 +19,11 @@ import os
 load_dotenv()
 
 # Get SECRET_KEY from environment variables
-SECRET_KEY = 'django-insecure-q-k&*4po0p0=@6g1o^4=p5*k+8(^)=si6wz&__d60u#(_elfr6'
+SECRET_KEY = os.getenv('SECRET_KEY')
+
+if not SECRET_KEY:
+    raise ValueError("The SECRET_KEY environment variable is not set!")
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -35,7 +39,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'web-production-c80e.up.railway.app','jfshoes.net','www.jfshoes.net'
