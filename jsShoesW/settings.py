@@ -15,7 +15,14 @@ import dj_database_url
 from dotenv import load_dotenv
 import os
 
+# Load environment variables from .env file
 load_dotenv()
+
+# Get SECRET_KEY from environment variables
+SECRET_KEY = os.getenv('SECRET_KEY')
+
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,14 +34,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'web-production-c80e.up.railway.app','jfshoes.net','www.jfshoes.net'
+]
 
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://web-production-c80e.up.railway.app',
+    'https://jfshoes.net',
+    'https://www.jfshoes.net'
+]
 # Application definition
 
 INSTALLED_APPS = [
@@ -85,9 +98,14 @@ WSGI_APPLICATION = 'jsShoesW.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
+
 DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+    'default': dj_database_url.config(
+        default=os.getenv('DATABASE_URL'),
+    )
 }
+
 
 
 # Password validation
