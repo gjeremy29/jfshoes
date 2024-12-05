@@ -33,10 +33,56 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.virtualized-container {
+  width: 360px; /* Ajusta el ancho según sea necesario */
+  height: 400px; /* Altura fija para habilitar desplazamiento */
+  overflow-y: auto; /* Activa el desplazamiento vertical */
+  background-color: #f8f9fa; /* Color de fondo */
+  border: 1px solid #ddd; /* Borde opcional */
+  border-radius: 5px;
+}
+
+.virtualized-list {
+  list-style: none; /* Elimina los estilos de lista predeterminados */
+  margin: 0;
+  padding: 0;
+}
+
+.virtualized-item {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd; /* Divide visualmente los elementos */
+  font-family: Arial, sans-serif;
+  background-color: #fff; /* Fondo de los elementos */
+  transition: background-color 0.2s;
+}
+
+.virtualized-item:hover {
+  background-color: #f1f1f1; /* Efecto hover */
+}
 
 
 
-
+/*-----------------------------------
+#center div
+-----------------------------------*/
+.centered-div {
+  width: 300px; /* Ajusta el ancho */
+  height: 150px; /* Ajusta la altura */
+  margin: auto; /* Centrado horizontal */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrado vertical */
+  border: 2px solid #333; /* Borde con color negro */
+  border-radius: 10px; /* Esquinas ligeramente redondeadas (opcional) */
+  background-color: #f9f9f9; /* Color de fondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
 
 /*-----------------------------------------------------------
 # Back to top button
@@ -1600,3 +1646,4 @@ section {
   display: grid;
   place-items: center;
 }
+

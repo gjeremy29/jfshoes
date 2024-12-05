@@ -34,7 +34,27 @@ h6 {
 }
 
 
-
+/*-----------------------------------
+#center div
+-----------------------------------*/
+.centered-div {
+  width: 300px; /* Ajusta el ancho */
+  height: 150px; /* Ajusta la altura */
+  margin: auto; /* Centrado horizontal */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrado vertical */
+  border: 2px solid #333; /* Borde con color negro */
+  border-radius: 10px; /* Esquinas ligeramente redondeadas (opcional) */
+  background-color: #f9f9f9; /* Color de fondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
 
 
 
@@ -1596,5 +1616,6 @@ section {
   border-radius: 5px;
   padding: 100px 100px;
 }
+
 
 

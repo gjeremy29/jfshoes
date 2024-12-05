@@ -4,46 +4,48 @@
 
 {% block content %}
 
- <!-- ======= Contact Section ======= -->
- 
+<!-- ======= Contact Section ======= -->
 
- <section id="cta" class="cta">
-    <div class="container">
 
-      <div class="row" data-aos="zoom-out">
-        <div class="col-lg-9 text-center text-lg-start">
-          <h3>Nuestras sucursales.</h3>
-          <p> Si deseas empezar a vender nuestras marcas, como Vizzano, Modare Ultraconforto, Actvitta y BR Sport, te invitamos a ponerte en contacto con nosotros. Por favor, ten en cuenta que requerimos que ya cuentes con una tienda física o una plataforma en línea establecida. ¡Estamos emocionados poder trabajar juntos!</p>
-        </div>
-        
+<section id="cta" class="cta">
+  <div class="container">
+    <div class="row" data-aos="zoom-out">
+      <div class="col-lg-9 text-center text-lg-start">
+        <h3>Nuestras sucursales</h3>
+        <p> Si deseas empezar a vender nuestras marcas, como Vizzano, Modare Ultraconforto, Actvitta y BR Sport, te
+          invitamos a ponerte en contacto con nosotros. Por favor, ten en cuenta que requerimos que ya cuentes con una
+          tienda física o una plataforma en línea establecida. ¡Estamos emocionados poder trabajar juntos!</p>
       </div>
 
     </div>
-  </section><!-- End Cta Section -->
 
-  
-      <!-- ======= Cta Section ======= -->
-      <div class="row">
-        <div class="col-md-4">
-            <h3>Nuestras Sucursales</h3>
-            <p class="lead">Estas son nuestras sucursales donde los atenderemos con profesionalismo y dedicación</p>
-    
-            <ol class="list-group">
-    
-                {% for location in locations %}
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                    <div class="ms-2 me-auto">
-                    <div class="fw-bold">{{ location.name }}</div>
-                    {{ location.address }}
-                    </div>
-                </li>
-                {% endfor %}
-            </ol>
-        </div>
-        <div class="col-md-8">
-            {{ map|safe }}
-        </div>
-    </div>
+  </div>
+</section>
+
+
+<div class="container mt-4">
+  <div class="section-title" data-aos="zoom-out">
+    <h2>JF SHOES</h2>
+    <p>Sucursales</p>
+  </div>
+</div>
+
+
+
+<div class="d-flex justify-content-center">
+  <div class="col-md-5 col-12 p-3"> <!-- Adjust size based on screen -->
+    {{ map|safe }}
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 
 {% endblock %}
